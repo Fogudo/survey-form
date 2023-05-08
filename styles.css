@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  height: 100%;
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body:before {
+  content: "";
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-image: linear-gradient(
+      115deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url(survey.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#survey-form {
+  background-color: rgba(20, 20, 28, 0.75);
+  max-width: 720px;
+  width: 90vw;
+  padding: 2.5em;
+  margin: 2px auto;
+}
+header {
+  text-align: center;
+  font-size: 0.9em;
+  font-weight: normal;
+  margin: 30px;
+}
+h1 {
+  margin-bottom: 0;
+  margin-top: 35px;
+}
+p {
+  margin-top: 0;
+  font-style: italic;
+  font-weight: lighter;
+}
+.form-id,
+#dropdown {
+  width: 100%;
+  height: 2.5em;
+  border-radius: 5px;
+  border: 0;
+}
+
+.form-div-9,
+#suggestion {
+  width: 100%;
+}
+.form-div-5 {
+  display: flex;
+  flex-direction: column;
+}
+input[type="submit"] {
+  width: 100%;
+  height: 3em;
+  background-color: rgb(39, 187, 125);
+  border: 0;
+  margin-top: 20px;
+  font-weight: 400;
+  color: white;
+  font-size: large;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.form-div-2,
+.form-div-3,
+.form-div-4,
+.form-div-5,
+.form-div-6,
+.form-div-7,
+.form-div-8 {
+  margin: 15px 0;
+}
+
+.small {
+  font-size: 12px;
+  vertical-align: middle;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  width: 20px;
+  height: 20px;
+  margin: 10px 5px 5px 0;
+  vertical-align: bottom;
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+  }
+}
+select#dropdown,
+.form-id,
+textarea {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.4;
+  color: rgb(47, 45, 45);
+  font-size: 16px;
+  margin-top: 5px;
+  padding: 6px 12px;
+}
+.form-div-7 > label {
+  vertical-align: middle;
+  margin-bottom: 15px;
+}
+.form-div-4,
+.form-div-5,
+.form-div-6,
+.form-div-7 {
+  margin-bottom: 30px;
+}
